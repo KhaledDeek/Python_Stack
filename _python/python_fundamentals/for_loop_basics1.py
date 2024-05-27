@@ -1,171 +1,46 @@
-#1
-def a():
-    return 5
-print(a())
-
-output >> 5 
-
-#2
-def a():
-    return 5
-print(a()+a())
-
-output >> 10
+1#.
+for i in range(151):
+    print(i)
 
 
-#3
-def a():
-    return 5
-    return 10
-print(a())
+2#.
+for x in range(5,1000):
+    if x%5 == 0:
+        print(x)
+	
 
-output >> 5 
-
-
-#4
-def a():
-    return 5
-    print(10)
-print(a())
-
-output >> 5
-
-
-#5
-def a():
-    print(5)
-x = a()
-print(x)
-
-output >> 5
-
-
-#6
-def a(b,c):
-    print(b+c)
-print(a(1,2) + a(2,3))
-
-
-output >> 8
-
-
-#7
-def a(b,c):
-    return str(b)+str(c)
-print(a(2,5))
-
-
-output >> 25
-
-
-#8
-def a():
-    b = 100
-    if b < 10:
-        return 5
-    else:
-        return 10
-    return 7
-print(a()) 
-
-
-output >> 7
-
-
-#9
-def a(b,c):
-    if b<c:
-        return 7
-    else:
-        return 14
-    return 3
-print(a(2,3))
-print(a(5,3))
-print(a(2,3) + a(5,3))
-
-
-output >> 7 , 14 , 21
-
-
-#10
-def a(b,c):
-    return b+c
-    return 10
-print(a(3,5))
-
-
-output >> 8
-
-
-#11
-b = 500
-print(b)
-def a():
-    b = 300
-    print(b)
-print(b)
-a()
-print(b)
-
-
-output >> 500 , 500 , 300 , 500
-
-
-#12
-b = 500
-print(b)
-def a():
-    b = 300
-    print(b)
-    return b
-print(b)
-a()
-print(b)
-
-
-output >> 500 , 500 , 300 300 , 500
-
-
-#13
-b = 500
-print(b)
-def a():
-    b = 300
-    print(b)
-    return b
-print(b)
-b=a()
-print(b)
-
-
-output >>  500 , 500 , 300 , 300
-
-
-#14
-def a():
-    print(1)
-    b()
-    print(2)
-def b():
-    print(3)
-a()
-
-
-output >>  1 , 2 
-
-
-#15
-def a():
-    print(1)
-    x = b()
-    print(x)
-    return 10
-def b():
-    print(3)
-    return 5
-y = a()
-print(y)
+3#.
+for v in range(1,100):
+    if v%10 == 0:
+    	print("Coding Dojo")    
+    elif v%5 == 0:
+    	print("Coding")
+    else: 
+        print(v)
 
 
 
-output >>   1 x 10 , 1 x 10
+4#.
+sum = 0
+for x in range(0,500000):
+    if x%2 != 0:
+        sum += x
+print(sum)    
+    
+
+
+5#.
+for c in range(2018,0,-4):
+    if c%2 == 0:
+        print(c)
+
+
+
+6#.
+lowNum= 2
+highNum = 9
+mult = 3
+
+for x in range(lowNum,highNum+1):
+    if x%mult == 0:
+        print(x)
