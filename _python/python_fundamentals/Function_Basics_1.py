@@ -3,14 +3,14 @@ def a():
     return 5
 print(a())
 
-output >> 5 
+#output >> 5 
 
 #2
 def a():
     return 5
 print(a()+a())
 
-output >> 10
+#output >> 10
 
 
 #3
@@ -19,7 +19,7 @@ def a():
     return 10
 print(a())
 
-output >> 5 
+#output >> 5 
 
 
 #4
@@ -28,16 +28,16 @@ def a():
     print(10)
 print(a())
 
-output >> 5
+#output >> 5
 
 
 #5
 def a():
     print(5)
 x = a()
-print(x) ????
+print(x)
 
-output >> 5 , none
+#output >> 5 , none
 
 
 #6
@@ -46,7 +46,7 @@ def a(b,c):
 print(a(1,2) + a(2,3))
 
 
-output >> 8
+#output >> 8
 
 
 #7
@@ -55,7 +55,7 @@ def a(b,c):
 print(a(2,5))
 
 
-output >> 25
+#output >> 25
 
 
 #8
@@ -64,15 +64,14 @@ def a():
     print(b)
     if b < 10:
         return 5
-    else:
-        return 10
+    else: return 10
     return 7
 print(a())
 
 
 
 
-output >> 100 , 10
+#output >> 100 , 10
 
 
 #9
@@ -87,7 +86,7 @@ print(a(5,3))
 print(a(2,3) + a(5,3))
 
 
-output >> 7 , 14 , 21
+#output >> 7 , 14 , 21
 
 
 #10
@@ -97,7 +96,7 @@ def a(b,c):
 print(a(3,5))
 
 
-output >> 8
+#output >> 8
 
 
 #11
@@ -111,7 +110,7 @@ a()
 print(b)
 
 
-output >> 500 , 500 , 300 , 500
+#output >> 500 , 500 , 300 , 500
 
 
 #12
@@ -126,7 +125,7 @@ a()
 print(b)
 
 
-output >> 500 , 500 , 300 , 500
+#output >> 500 , 500 , 300 300 , 500
 
 
 #13
@@ -141,7 +140,7 @@ b=a()
 print(b)
 
 
-output >>  500 , 500 , 300 , 300
+#output >>  500 , 500 , 300 , 300
 
 
 #14
@@ -154,7 +153,7 @@ def b():
 a()
 
 
-output >>  1 ,3, 2 
+#output >>  1 ,3, 2 
 
 
 #15
@@ -171,4 +170,4 @@ print(y)
 
 
 
-output >>   1 x 10 , 1 x 10
+#output >>   1 x 10 , 1 x 10

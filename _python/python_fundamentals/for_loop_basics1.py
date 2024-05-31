@@ -11,10 +11,8 @@ for x in range(5,1000):
 
 3#.
 for v in range(1,100):
-    if v%10 == 0:
-    	print("Coding Dojo")    
-    elif v%5 == 0:
-    	print("Coding")
+    if v%10 == 0: print("Coding Dojo")    
+    elif v%5 == 0: print("Coding")
     else: 
         print(v)
 

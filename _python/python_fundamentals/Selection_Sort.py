@@ -1,12 +1,12 @@
+def insertion_sort(lst):
+    for i in range(len(lst)-1):
+        minimum = i 
+        for k in range(i+1,len(lst)):
+            if lst[k] < lst[minimum]:
+                minimum = k
+        minimum_value= lst.pop(minimum)
+        lst.insert(i,minimum_value)
+    print(lst)
 
-arr = [8,5,2,6,9,3,1,4,8,7]
-def sort(arr):
-    newArray = []
-    for i in range(len(arr)):
-        x = min(arr) 
-        newArray.append(x)
-        arr.remove(x)
-    print(newArray)
 
-sort(arr)
-
+insertion_sort([8,5,6,9,3,4,7])
