@@ -170,4 +170,4 @@ print(y)
 
 
 
-#output >>   1 x 10 , 1 x 10
+#output >>   1 3 10 , 1 3 10
