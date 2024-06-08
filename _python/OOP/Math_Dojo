@@ -1,0 +1,26 @@
+class MathDojo:
+    def __init__(self):
+        self.result = 0
+    def add(self,num, *nums):
+        self.result = self.result
+        for i in range(0,len(nums)):
+            self.result+= nums[i]
+        self.result += num
+        return self
+    def subtract(self, num, *nums):
+        for i in range(0,len(nums)):
+            self.result-= nums[i]
+        self.result -= num
+        return self
+    def results(self):
+        print(self.result)
+
+md = MathDojo()
+md2 = MathDojo()
+md3 = MathDojo()
+
+# to test:
+
+y = md2.add(5).add(2,4,6).subtract(2,5).results()
+x = md.add(2).add(2,5,1).subtract(3,2).results()
+z = md3.add(7).add(3,4,8).subtract(2,5).results()
