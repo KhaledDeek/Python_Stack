@@ -1,0 +1,20 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 80px 0px 70px 0px;
+    font-size: 500%;
+}
+.container{
+    text-align: center
+}
+.box{
+    display: inline-block;
+    background-color: hsl(214.38deg 86.41% 79.8%);
+    border: 6px solid black;
+    height: 400px;
+    width: 400px;
+    margin: 10px 10px 10px 10px ;
+}
