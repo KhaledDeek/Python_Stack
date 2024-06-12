@@ -12,16 +12,6 @@ def survey_result():
     language_select = request.form['language']
     comment = request.form['textarea']
     session['name'] = request.form['name']
-    session['location'] = request.form['location']
-    session['language'] = request.form['language']
-    session['textarea'] = request.form['textarea']
-    return redirect("/result")
-@app.route("/result")
-def main_form():
-    return render_template("index2.html" , name_on_template=session['name'] ,selected_location=session['location'] ,selected_language=session['language'], commented=session['textarea'])
-@app.route('/')
-def main_page():
-    return render_template("index.html")
-
+    return render_template("index2.html" , name_on_template=name_on_form ,selected_location=location_select ,selected_language= language_select, commented=comment)
 if __name__=="__main__":
     app.run(debug=True) 
