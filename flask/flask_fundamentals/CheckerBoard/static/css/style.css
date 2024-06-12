@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+}
+.container{
+    margin: 100px 0px 0px 50px;
+}
+td {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
