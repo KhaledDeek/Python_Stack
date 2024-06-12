@@ -1,0 +1,31 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    margin: 50px 80px 0px 80px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.name {
+    display: flex;
+}
+#form-check , #form-check2{
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+.form-floatingx {
+    display: flex;
+    margin: 5px 0px 5px 0px ;
+}
+
+#floatingTextarea2 {
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+}
