@@ -34,11 +34,6 @@
         <p class="lead text-muted">We ordered {{sum}} items for you and charged your student account on
         <h5 id="time"></h5>
         </p>
-        <script>
-          const d = new Date();
-          document.getElementById("time").innerHTML = d;
-        </script>
-      </div>
     </section>
 
     <div class="album py-5 bg-light">
@@ -88,7 +83,7 @@
     </div>
 
   </main>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
