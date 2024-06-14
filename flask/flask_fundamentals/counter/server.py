@@ -10,7 +10,7 @@ def sum_count():
 
 @app.route('/destroy_session')
 def reset():
-    session['counter'] = 0
+    session.clear()
     return redirect('/')
 
 @app.route('/plus2')
@@ -20,7 +20,7 @@ def add2():
 
 @app.route('/delete')
 def delete():
-    session['counter'] = 0
+    session.clear() 
     return redirect('/')
 
 @app.route("/increment" ,methods=['POST'])
