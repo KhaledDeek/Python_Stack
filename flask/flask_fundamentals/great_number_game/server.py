@@ -15,7 +15,7 @@ def game():
     if 'counter' not in session:
         session['counter'] = 0
     session['counter']+=1
-    if int(session['random']) < int(session['number'] and int(session['counter'] < 5)) :
+    if int(session['random']) < int(session['number']) and int(session['counter'] < 5)) :
         odd = 2
         return render_template("index.html" ,odd=odd, count= session['counter'] )
     elif int(session['random']) > int(session['number']) and int(session['counter'] < 5):
