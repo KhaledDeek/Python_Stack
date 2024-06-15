@@ -1,5 +1,5 @@
-x = document.querySelectorAll(".time")
+x = document.querySelectorAll("span")
 time  = new Date()
 for (let i=0 ; i< x.length ; i++){
-    x[i].innerHTML = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
+    x[i].innerHTML = "  at   "+ time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
 }

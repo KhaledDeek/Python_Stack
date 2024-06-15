@@ -20,8 +20,8 @@ def game():
 def find_gold():
     print(request.form)
     import random
-    msg1 = f"<ul><li>'Earned {session['rand']} golds from the {session['building']}'</li></ul>"
-    msg2 = f"<ul><li>'Entered a casino and lost {session['rand']} golds .. Ouch ..'</li></ul>"
+    msg1 = f"<ul><li>Earned {session['rand']} golds from the {session['building']}<span></span></li></ul>"
+    msg2 = f"<ul><li>Entered a casino and lost {session['rand']} golds .. Ouch ..<span></span></li></ul>"
     if 'count' not in session:
         session['count'] = -1
     session['count'] +=1
