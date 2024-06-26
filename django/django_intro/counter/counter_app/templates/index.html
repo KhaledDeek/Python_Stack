@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <form action="/increment"  method="post">
+            {% csrf_token%}
+            <h3>Type the increment <input type="number" name="number" ></h3>
+        </form>
+        <h3><span name="counter">{{sum}}</span> Count</h3>
+    </div>
+    <div id="container2">
+        <form action="/plus2">
+            <button class="btn btn-danger">Add +2 !</button>
+        </form>
+        <form action="/destroy_session">
+            <button class="btn btn-warning">Reset !</button>
+        </form>
+    </div>
+    <div class="container3">
+        <h3>Actual number of visits : {{visits}}</h3>
+        <h3>Value of counter : {{counter}}</h3>
+    </div>
+        
+        
+    
+</body>
+
+</html>
