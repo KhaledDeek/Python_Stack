@@ -1,8 +1,7 @@
 
 from django.shortcuts import HttpResponse, redirect 
 from django.http import JsonResponse
-def root(request):
-    return redirect('/blogs')
+
 def index(request):
     return HttpResponse("placeholder to later display a list of all blogs")
 def new(request):
