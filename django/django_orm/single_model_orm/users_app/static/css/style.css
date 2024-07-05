@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 30px
+}
+.table{
+    margin-top: 30px;
+}
+#upper{
+    margin: 40px 0px 20px 0px;
+}
+#button{
+    margin-top: 30px;
+}
