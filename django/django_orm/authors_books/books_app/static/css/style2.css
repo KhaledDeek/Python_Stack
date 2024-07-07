@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.list{
+    width: 200px;
+}
+h1 , h3 , h4 , p {
+    margin: 20px , 20px , 20px , 20px;
+}
+.select{
+    display: flex;
+}
+
+#btn{
+    margin-left: 10px;
+}
+#select{
+    width: 200px;
+}
