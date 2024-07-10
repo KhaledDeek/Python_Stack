@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#upper{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+#h1 , #h12{
+    margin-top: 40px;
+}
+#left , #right{
+    margin-right: 50px;
+}
+.form-control , .form-select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#a,#b,#c,#d,#e,#f{
+    align-items: center;
+}
+.label{
+    margin-right: 30px;
+    width: 80px;
+}
+.label1{
+    margin-right: 30px
+}
+#btn1 , #btn2{
+    width: 100px;
+    margin-left: 170px;
+}
+#lower{
+    width: 1000px;
+    margin: 0 auto ;
+    text-align: center;
+}   
+#list{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#ninja{
+    width: 500px;
+    text-align: left;
+    margin-left:80px ;
+}
+#ul{
+    text-align: left;
+}
+#btn3{
+    height: 50px;
+}
+#form{
+    display: flex;
+    align-items: center;
+}

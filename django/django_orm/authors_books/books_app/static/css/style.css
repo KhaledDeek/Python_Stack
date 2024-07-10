@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#text{
+    display: flex;
+    align-items: center;
+}
+#h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#title{
+    margin-bottom: 20px;
+}
+.span{
+    text-align: center;
+    margin-right: 15px;
+    font-size: large;
+}
+#desc{
+    height: 50px;
+}
+#table{
+    width: 400px;
+    text-align: center;
+}
+#add{
+    margin-left: 100px;
+    width: 100px;
+}
