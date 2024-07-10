@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#c{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.upper_line {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+}
+.mid_line{
+    display: flex;
+    justify-content: space-between;
+    margin:  30px 0px 30px 0px;
+}
+.mb-3 , .title{
+    margin:  30px 0px 30px 0px;
+}
+img{
+    height: 40px;
+}
+.calendar{
+    display: flex;
+}
+#btn{
+    width: 100px;
+    margin-left: 270px;
+}

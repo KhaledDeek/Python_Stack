@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#c{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#shows{
+    margin-bottom: 50px;
+}
