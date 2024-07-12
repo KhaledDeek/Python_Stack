@@ -1,4 +1,27 @@
 from django.db import models
+import datetime
+import re
+
+class showManager(models.Manager):
+    def basic_validator(self , postData):
+        errors = {}
+        if re.search(postData['title'], postData['title']) != None :
+            errors['title'] = 'Title already exists'
+        if len(postData['title']) < 2:
+            errors['title'] = 'Title should be at least 2 characters'
+        if len(postData['network']) < 3:
+            errors['network'] = 'Network name should be at least 3 characters'
+        if 0 < len(postData['description']) < 10:
+            errors['description'] = 'Description should be at least 10 chracters '
+        if postData['release_date']>= datetime.datetime.today().strftime('%Y-%m-%d'):
+            errors['release_date'] = 'Release Date should be in the past '
+        if 10 > len(postData['release_date']):
+            errors['release_date'] = 'Release Date should be at least 10 chracters '
+        return errors
+
+
+
+
 
 class show(models.Model):
     title = models.CharField(max_length=50)
@@ -7,6 +30,7 @@ class show(models.Model):
     description = models.TextField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at= models.DateTimeField(auto_now=True)
+    objects = showManager()
 
 
 def all_shows():

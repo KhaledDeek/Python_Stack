@@ -19,6 +19,13 @@
         </div>
         <form action="/shows/create_show" method="post">
             {%csrf_token%}
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{message}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <div class="title">
                 <h3>Title</h3>
                 <input type="text" name="title" aria-label="title" class="form-control">
@@ -43,8 +50,10 @@
                 <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <button type="Submit" id="btn" class="btn btn-warning">Create</button>
+
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </body>
 
 </html>

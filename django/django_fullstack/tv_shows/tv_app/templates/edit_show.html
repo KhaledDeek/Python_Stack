@@ -17,8 +17,15 @@
             <h1>Edit Show {{show.id}}</h1>
             <a href="/shows">Go Back</a>
         </div>
-        <form action="/shows/{{show.id}}/update_show" method="post">
+        <form action="/shows/update_show/{{show.id}}" method="post">
             {%csrf_token%}
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <div class="title">
                 <h3>Title</h3>
                 <input type="text" name="title" placeholder={{show.title}} aria-label="title" class="form-control">
@@ -26,12 +33,13 @@
             <div class="mid_line">
                 <div>
                     <h3>Network</h3>
-                    <input type="text" name="network" placeholder={{show.network}} aria-label="network" class="form-control">
+                    <input type="text" name="network" placeholder={{show.network}} aria-label="network"
+                        class="form-control">
                 </div>
                 <div>
                     <h3>Release Date</h3>
                     <div class="calendar">
-                        <input type="date" name="release_date" aria-label="network"  class="form-control" name="" id="">
+                        <input type="date" name="release_date" aria-label="network" class="form-control" name="" id="">
                         <img src="{% static 'images/img2.jpg' %}" />
                     </div>
                 </div>
@@ -40,12 +48,14 @@
                 <label for="exampleFormControlTextarea1" class="form-label">
                     <h3>Description</h3>
                 </label>
-                <textarea class="form-control" placeholder={{show.description}} name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" placeholder={{show.description}} name="description"
+                    id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <button type="Submit" id="btn" class="btn btn-warning">Update</button>
         </form>
         <a href="/shows/{{show.id}}">Go to Show</a>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </body>
 
 </html>
