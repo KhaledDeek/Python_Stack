@@ -18,6 +18,7 @@ def new_show(request):
 def create_show(request):
     if request.method == 'POST':
         errors = models.show.objects.basic_validator(request.POST)
+        debugs = models.show.objects.basic_validator(request.POST)
         if len(errors) > 0:
             for k , value in errors.items():
                 messages.error(request, value)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete A Course</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="c" class="container">
+        <h1>Are you sure you want to delete the following course ??</h1>
+        <h5 class="desc">Name : {{thecourse.name}}</h5>
+        <h5 class="desc">Description : {{thecourse.description.desc}}</h5>
+        <div id="btns">
+            <form action="/">
+                {%csrf_token%}
+                <button type="submit" class="btn btn-secondary">No</button>
+            </form>
+            <form action="/destroy/{{thecourse.id}}">
+                {%csrf_token%}
+                <button type="submit" class="btn btn-danger">Yes !! I want to delete this</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

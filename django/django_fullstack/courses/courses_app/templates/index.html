@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a student to all bootcamp courses</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="c" class="container">
+        <div>
+            <form action="/create_course" method="post">
+                {%csrf_token%}
+                <h3>Add a New Course</h3>
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div class="form">
+                    <h6>Name :</h6>
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" aria-label="First name" class="form-control">
+                    </div>
+                </div>
+                <div class="form">
+                    <h6>Description:</h6>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="text_area" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                </div>
+                <button id="btn" type="Submit" class="btn btn-success">Add</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Courses</h3>
+            <table id="table" class="table table-striped table-hover">
+                <tr>
+                    <th>Course Name </th>
+                    <th>Description</th>
+                    <th>Date Added</th>
+                    <th>Action</th>
+                    <th>Comment</th>
+                </tr>
+                {% for course in courses%}
+                <tr>
+                    <td>{{course.name}}</td>
+                    <td>{{course.description.desc}}</td>
+                    <td>{{course.created_at}}</td>
+                    <td><a href="/courses/destroy/{{course.id}}">remove</a></td>
+                    <td><a href="/courses/comments/{{course.id}}">Comment</a></td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

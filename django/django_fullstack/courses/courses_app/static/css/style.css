@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#c{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.form{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+h6{
+    margin-right: 30px;
+    width: 100px;
+    text-align: center
+}
+.form-control{
+    width: 660px;
+}
+#exampleFormControlTextarea1 {
+    width: 660px;
+}
+#btn{
+    margin-left: 700px;
+    width: 80px;
+}
+.messages{
+    color: red;
+}
