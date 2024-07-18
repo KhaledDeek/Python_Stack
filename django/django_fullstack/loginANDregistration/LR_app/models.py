@@ -27,6 +27,8 @@ class UserManager(models.Manager):
         EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
         if not EMAIL_REGEX.match(postData['email']):      
             errors['email'] = "Invalid email address!"
+        if User.objects.filter(email = postData['email']).exists():
+            errors['email'] = "Email already exists"
         return errors
 
 
