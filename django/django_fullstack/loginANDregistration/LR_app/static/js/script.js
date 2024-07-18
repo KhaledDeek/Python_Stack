@@ -1,4 +1,4 @@
-fname = document.getElementById('fn').value;
+/*fname = document.getElementById('fn').value;
 lname = document.getElementById('ln').value;
 pass = document.getElementById('pw').value;
 email = document.getElementById('e').value
@@ -53,5 +53,5 @@ document.getElementById('register_btn').addEventListener('click' , function(even
         if (fname == "" || fname.length < 2 || lname == "" || lname.length < 2 || pass == "" || pass.lnegth < 8 || email.pattern != pattern ){
             event.preventDefault()
         }
-})
+})*/
 
