@@ -1,0 +1,19 @@
+.con{
+    display: flex;
+}
+#c{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+a{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: green;
+}
