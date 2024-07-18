@@ -20,10 +20,14 @@ def register(request):
 
 
 def success(request):
-    context = {
-        'fn' : request.session['first_name'] 
-    }
-    return render(request , 'welcome.html' , context)
+    if 'first_name' not in request.session:
+        return redirect('/')
+    else:
+        id = request.session['id']
+        context = {
+            'fn' : request.session['first_name'] ,
+        }
+        return render(request , 'welcome.html' , context)
 
 
 
