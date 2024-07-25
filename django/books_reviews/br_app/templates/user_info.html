@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Books Home</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/create_book.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="{% static 'js/script.js' %}"></script>
+    </head>
+</head>
+<body>
+    <div id="c">
+        <h5>User Alias :{{user.alias}}</h5>
+        <h5>Name : {{user.name}}</h5>
+        <h5>Email : {{user.email}}</h5>
+        <h5>Total number of Reviews :{{user.reviews.all|length}}</h5>
+        <ul>
+            {%for review in user.reviews.all%}
+            <li><a href="/book_info/{{review.books.id}}">{{review.books.title}}</a></li>
+            {%endfor%}
+        </ul>
+    </div>
+</body>
+</html>
+

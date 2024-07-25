@@ -1,0 +1,25 @@
+#c , #con{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+} 
+#sidebar{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+#list{
+    height: 200px;
+    width: 300px;
+    overflow: scroll;
+    border: 2px 2px solid black;
+}

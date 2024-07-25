@@ -1,0 +1,25 @@
+#c{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+} 
+.select{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 20px 0px 20px 20px;
+}
+#rating {
+    width:100px;
+    margin-left: 30px;
+}
+#author{
+    width: 300px;
+    margin-left: 30px;  
+}
+.input-group{
+    margin: 20px 0px 20px 20px;;
+}
+#btn{
+    margin-left: 300px;
+}
