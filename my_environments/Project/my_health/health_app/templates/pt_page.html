@@ -22,6 +22,7 @@
                 <button type="submit" id="btn1" class="btn btn-success">Vitals</button>
             </form>
             <form action="/{{pt.id}}/appointment" method="post">
+                {%csrf_token%}
                 <button type="submit" id="btn2" class="btn btn-success">Make an Appointment</button>
             </form>
             <form action="/logout">
