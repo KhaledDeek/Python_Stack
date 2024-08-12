@@ -126,7 +126,7 @@ class Vital(models.Model):
     hr = models.IntegerField()
     sbp = models.IntegerField()
     dbp = models.IntegerField()
-    temp = models.IntegerField()
+    temp = models.FloatField()
     spo2 = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

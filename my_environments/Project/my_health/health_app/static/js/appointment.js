@@ -1,3 +1,5 @@
+x = document.getElementById('imgx')
+x.src = '/static/images/appointment.jpg'
 $(document).ready(function () {
     function getCookie(name) {
         let cookieValue = null;

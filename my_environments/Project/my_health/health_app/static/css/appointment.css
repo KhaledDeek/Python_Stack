@@ -44,7 +44,7 @@ html {
     margin-top: 40px;
     opacity: 0.70!important;
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(174, 132, 213);
     border-color: purple;   
 }
 .form-select{

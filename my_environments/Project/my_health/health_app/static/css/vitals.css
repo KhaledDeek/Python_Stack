@@ -67,3 +67,6 @@ html {
     background: transparent!important;
     border-color: purple;
 }
+td{
+    text-align: center;
+}

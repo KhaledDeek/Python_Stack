@@ -14,7 +14,7 @@
 </head>
 
 <body >
-    <img id="imgx" src="{% static 'images/HD-wallpaper-purple-blur-abstract-purple-abstract-blur-deviantart.jpg' %}" />
+    <img id="imgx" />
     <div id="image"></div>
     <div id="c" class="container">
         <div class="nav">
@@ -33,9 +33,10 @@
             <h3 class="text">Dr Name : {{visit.doctor.first_name}}{{' '}}{{visit.doctor.last_name}}</h3>
             <h5 class="text">Cause Of The Visit : {{visit.cause}}</h5>
             <h5 class="text">Management : {{visit.management}}</h5>
-            <h5 class="text">Vitals : HR {{visit.vitals.hr}} ,{{' '}} TEMP {{visit.vitals.temp}},{{' '}}BP {{visit.vitals.sbp}}/{{visit.vitals.dbp}} ,{{' '}} SPO2 {{visit.vitals.spo2}}%</h5>
+            <h5 class="text">Vitals:<li>HR {{visit.vitals.hr}}</li><li>TEMP {{visit.vitals.temp}}°</li><li>BP {{visit.vitals.sbp}}/{{visit.vitals.dbp}}</li><li>SPO2 {{visit.vitals.spo2}}%</li></h5>
         </div>
     </div>
+    <script src="{% static 'js/update_info.js' %}"></script>
 </body>
 
 </html>

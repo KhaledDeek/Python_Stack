@@ -59,3 +59,6 @@ html {
     background: transparent!important;
     border-color:#9c6fe4
 }
+li{
+    list-style:circle;
+}

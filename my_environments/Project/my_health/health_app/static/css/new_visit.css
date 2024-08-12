@@ -94,11 +94,17 @@ h6 {
 
     border-color: blueviolet!important;
 }
-#btn1 , #btn2 {
+#btn1 {
     width: 120px;
     opacity: 0.90!important;
     background: transparent!important;
     border-color:#9c6fe4
+}
+#btn2{
+    width: 120px;
+    opacity: 0.90!important;
+    border-color:#9c6fe4;
+    background-color:rgb(88, 84, 84);
 }
 #a{
     width: 50px !important;
@@ -106,6 +112,17 @@ h6 {
 #form1 , #form2{
     width: 300px;
     height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);;
+    box-shadow: 2px 2px 2px  white; 
+    opacity: 10%;
+    color:black;
+}
+
+#a , #b , #f , #d ,#e{
+    background-color: rgba(255, 255, 255, 0.5);;
+    box-shadow: 2px 2px 2px  white; 
+    opacity: 10%;
+    color:black;
 }
 .text{
     text-align: left;
@@ -117,6 +134,9 @@ h6 {
 #cause_of_visit , #the_management{
     display: flex;
     align-items: center;
+}
+#the_management{
+    margin-top: 10px;
 }
 #vita , #vitas {
     display: flex;
