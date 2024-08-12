@@ -40,11 +40,11 @@ html {
 
 
 
-#image {
-    background-image: url('/static/images/Update_info.jpg');
+#imgx {
     filter: blur(8px);
     -webkit-filter: blur(0px);
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

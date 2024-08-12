@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <img id="imgx" src="{% static 'images/HD-wallpaper-purple-waves-abstract-kor4-rts-background-black-pattern-pink-wave.jpg' %}" />
     <div id="image"></div>
     <div id="c" class="container">
         <div class="nav">
@@ -39,7 +40,8 @@
                             <tr>
                                 <td>{{' '}}{{x.patient.first_name}}{{' '}}{{x.patient.last_name}}</td>
                                 <td>{{x.date}}</td>
-                                <td><a href="/{{x.id}}/visit/delete">Cancel</a>/<a href="/{{x.patient.id}}/visit">Submit</a></td>
+                                <td><a href="/{{x.id}}/visit/delete">Cancel</a>/<a
+                                        href="/{{x.patient.id}}/visit">Submit</a></td>
                             </tr>
                             {%endfor%}
                         </table>

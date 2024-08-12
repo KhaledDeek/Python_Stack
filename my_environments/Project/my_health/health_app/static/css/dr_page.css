@@ -52,9 +52,9 @@ html {
     margin-left: 50px;
 }
 
-#image {
-    background-image: url('/static/images/HD-wallpaper-purple-waves-abstract-kor4-rts-background-black-pattern-pink-wave.jpg');
+#imgx {
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

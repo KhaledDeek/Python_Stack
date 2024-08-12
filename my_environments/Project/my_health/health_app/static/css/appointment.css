@@ -50,12 +50,12 @@ html {
 .form-select{
     margin: 30px 0px 30px 0px;
 }
-#image {
-    background-image: url('/static/images/appointment.jpg');
+#imgx {
+    background-position: 100%;
     filter: blur(8px);
     -webkit-filter: blur(0px);
     height: 100%;
-    padding-top: 80px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,4 +84,9 @@ html {
 }
 #specialty_option , #location_option , #dr_option{
     color: black;
+}
+
+#contain{
+    position: relative;
+    top: -650px;
 }

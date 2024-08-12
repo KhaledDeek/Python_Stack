@@ -95,8 +95,9 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $("#appointment_form").on('submit', function (event) {
+        event.preventDefault();
         function getCSRFToken() {
             return $('meta[name="csrf-token"]').attr('content');
         }
@@ -118,6 +119,6 @@ $(document).ready(function () {
             },
         })
     })
-});
+});*/
 
 

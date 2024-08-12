@@ -228,7 +228,7 @@ def make_appointment(request , id):
         return redirect('/')
     else:
         models.make_appointment(id = id ,doctor = models.show_doctor(id = request.session['doctor_id'])   ,patient = models.show_patient(id=id) , location= request.session['location'], date=request.POST['date'])
-        subject = 'New Appointent'
+        subject = 'New Appointment'
         message = f'Dear {models.show_patient(id=id).first_name} you have booked an appointment with Dr. {models.show_doctor(id = request.session['doctor_id']).first_name} in {request.POST['date']} for appointment Cancellation plz visit your account'
         message2 = f'Dear Dr. {models.show_doctor(id = request.session['doctor_id']).first_name} you have a new appointment with {models.show_patient(id=id).first_name}  in {request.POST['date']} for appointment Cancellation plz visit your account'
         email1 = models.show_patient(id=id).email

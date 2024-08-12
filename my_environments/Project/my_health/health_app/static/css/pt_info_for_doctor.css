@@ -49,11 +49,11 @@ html {
     margin-left: 50px;
 }
 
-#image {
-    background-image: url('/static/images/HD-wallpaper-space-abstract-amoled-purple-s7-s8.jpg');
+#imgx {
     filter: blur(8px);
     -webkit-filter: blur(0px);
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
